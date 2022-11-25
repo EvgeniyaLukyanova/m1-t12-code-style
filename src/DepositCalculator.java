@@ -13,12 +13,12 @@ public class DepositCalculator {
         return round(amount + amount * yearRate * depositPeriod);
     }
 
-    double round(double value) {
+    double round(double value) {                    //Возможно лучше, когда названия методов не пересекаются с названиями методов стандартной библиотеки
         double scale = Math.pow(10, places);
         return Math.round(value * scale) / scale;
     }
 
-    void calculate() {
+    void calculate() {                              //Можно чуть-чуть подробнее название методу придумать ;)
         int period;
         int action;
 
